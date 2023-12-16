@@ -96,13 +96,14 @@ const QRCodePrintingDialog: React.FC<QRCodePrintingDialogProps> = ({ visible, it
             }
 
             .print-page .print-qrcode-container {
-              max-width: ${showContent ? "50%" : "100%"};
+              max-width: ${showContent ? "40%" : "100%"};
               display: flex;
             }
 
             .print-page .print-qrcode {
               width: auto !important;
               height: auto !important;
+              padding: 6px !important;
             }
 
             .print-page .print-qrcode-title {
