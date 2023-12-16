@@ -169,7 +169,7 @@ fi
 # Download appropriate client for this version
 if [ "$download_client" -eq 1 ]; then
     url="https://github.com/jmrmaker/Spoolman/releases/download/v$spoolman_version/spoolman-client.zip"
-    echo -e "${GREEN}Downloading Spoolman web client v$spoolman_version...${NC}"
+    echo -e "${GREEN}Downloading Spoolman web client v$spoolman_version...${NC} from https://github.com/jmrmaker/Spoolman/releases/download/v$spoolman_version/spoolman-client.zip"
     # Download and unzip silently
     curl -sL "$url" -o spoolman-client.zip || exit 1
     unzip -q -o spoolman-client.zip -d client/dist/ || exit 1
