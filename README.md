@@ -52,7 +52,7 @@ Copy-paste the entire below command and run it on your machine to install Spoolm
 sudo apt-get update && \
 sudo apt-get install -y curl jq && \
 mkdir -p ./Spoolman && \
-source_url=$(curl -s https://api.github.com/repos/Donkie/Spoolman/releases/latest | jq -r ".tarball_url") && \
+source_url=$(curl -s https://api.github.com/repos/jmrmaker/Spoolman/releases/latest | jq -r ".tarball_url") && \
 curl -sSL $source_url | tar -xz --strip-components=1 -C ./Spoolman && \
 cd ./Spoolman && \
 bash ./scripts/install_debian.sh
